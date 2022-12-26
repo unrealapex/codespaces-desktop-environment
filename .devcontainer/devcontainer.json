@@ -12,19 +12,19 @@
 	// "features": {},
 	"features": {
 	  "desktop-lite": {
-            "password": "vscode",
+			"password": "vscode",
 	    "webPort": "6080",
 	    "vncPort": "5901"
-          },
+		},
 	  "common": {
-            "username": "automatic",
-            "uid": "automatic",
-            "gid": "automatic",
-            "installZsh": true,
-            "installOhMyZsh": true,
-            "upgradePackages": true,
-            "nonFreePackages": false
-          }
+			"username": "automatic",
+			"uid": "automatic",
+			"gid": "automatic",
+			"installZsh": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"nonFreePackages": false
+		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
