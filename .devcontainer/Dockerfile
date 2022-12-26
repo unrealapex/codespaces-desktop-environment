@@ -9,7 +9,7 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 && sudo apt -y install ./google-chrome*.deb \
 && sudo apt-get -y install -f
 
-
+# vnc environment variables
 ENV DBUS_SESSION_BUS_ADDRESS="autolaunch:" \
     VNC_RESOLUTION="1280x720x32" \
     VNC_DPI="96" \
