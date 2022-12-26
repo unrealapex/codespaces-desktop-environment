@@ -1,8 +1,2 @@
-### Install Chrome
-Get the latest binary and run:
-run 
-```sh
-sudo dpkg -i /path/to/chrome/deb
-sudo apt-get install -f
-sudo dpkg -i /path/to/chrome/deb
-```
+# Codespace Test
+This repo is where I'm testing out GitHub Codespace's functionality. Specifically it's configurability via dev containers and how far I can push it. It has been set up with VNC to access this VM's desktop environment. When booting up, Google Chrome is installed automatically.
