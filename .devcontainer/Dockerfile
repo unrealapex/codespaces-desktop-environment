@@ -5,7 +5,11 @@ COPY library-scripts/desktop-lite-debian.sh /tmp/library-scripts/
 RUN apt-get update && bash /tmp/library-scripts/desktop-lite-debian.sh
 
 # install google chrome
-# RUN cd /workspaces/UnrealApex/.devcontainer && ./google-chrome.deb
+RUN sudo apt-get install libxss1 libappindicator1 libindicator7
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN sudo apt install ./google-chrome*.deb
+RUN sudo apt-get install -f
+
 
 ENV DBUS_SESSION_BUS_ADDRESS="autolaunch:" \
     VNC_RESOLUTION="1280x720x60" \
