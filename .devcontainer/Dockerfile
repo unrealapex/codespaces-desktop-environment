@@ -11,7 +11,7 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 
 # vnc environment variables
 ENV DBUS_SESSION_BUS_ADDRESS="autolaunch:" \
-    VNC_RESOLUTION="1280x720" \
+    VNC_RESOLUTION="1280x720x32" \
     VNC_DPI="96" \
     VNC_PORT="5901" \
     NOVNC_PORT="6080" \
