@@ -4,14 +4,10 @@ USER root
 COPY library-scripts/desktop-lite-debian.sh /tmp/library-scripts/
 RUN apt-get update && bash /tmp/library-scripts/desktop-lite-debian.sh
 
-# install brave
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
-rave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
-amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /et
-c/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser
+# install google chrome
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+&& sudo apt -y install ./google-chrome*.deb \
+&& sudo apt-get -y install -f
 
 # vnc environment variables
 ENV DBUS_SESSION_BUS_ADDRESS="autolaunch:" \
