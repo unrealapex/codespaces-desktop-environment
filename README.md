@@ -1,2 +1,2 @@
 # Codespace Desktop Environment
-This repo is where I'm testing out GitHub Codespace's functionality. Specifically it's configurability via dev containers and how far I can push it. It comes with a desktop environment(Fluxbox) which is acessible via noVNC through a forwarded port.
+This repository is a template to create Codespaces with a desktop environment. It is useful when testing applications that require a GUI. It comes with a desktop environment(Fluxbox) which is acessible via noVNC through a forwarded port.
