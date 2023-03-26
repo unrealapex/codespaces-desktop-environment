@@ -4,10 +4,8 @@ USER root
 COPY library-scripts/desktop-lite-debian.sh /tmp/library-scripts/
 RUN apt-get update && bash /tmp/library-scripts/desktop-lite-debian.sh
 
-# install google chrome
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-&& sudo apt -y install ./google-chrome*.deb \
-&& sudo apt-get -y install -f
+# install firefox
+RUN apt update && export DEBIAN_FRONTEND=noninteractive && apt install -y firefox-esr
 
 # vnc environment variables
 ENV DBUS_SESSION_BUS_ADDRESS="autolaunch:" \
